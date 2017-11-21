@@ -1,0 +1,4 @@
+sceneSetups:
+- path: "Assets/Scenes/ForRene\u0301.unity"
+  isLoaded: 1
+  isActive: 1
