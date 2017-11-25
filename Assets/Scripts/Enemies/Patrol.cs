@@ -7,17 +7,19 @@ public class Patrol : MonoBehaviour {
 	public Transform[] points;
 	private int destPoint = 0;
 	UnityEngine.AI.NavMeshAgent agent;
-
+	public Transform goal;
+	EnemyHealth eh;
 
 	void Start () {
 		UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-
+		eh = GetComponent<EnemyHealth> ();
 		// Disabling auto-braking allows for continuous movement
 		// between points (ie, the agent doesn't slow down as it
 		// approaches a destination point).
 		agent.autoBraking = false;
 
 		GotoNextPoint();
+		agent.destination = goal.position;
 	}
 
 
@@ -40,5 +42,10 @@ public class Patrol : MonoBehaviour {
 		// close to the current one.
 		if (!agent.pathPending && agent.remainingDistance < 0.5f)
 			GotoNextPoint();
+
+		if (eh.curHealth <= 30) 
+		{
+			agent.destination = goal.position;
+		}
 	}
 }

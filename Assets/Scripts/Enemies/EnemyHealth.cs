@@ -11,17 +11,17 @@ public class EnemyHealth : MonoBehaviour {
 	public bool drop;
 	public GameObject theDrop;
 	public GameObject deathParticles;
-	public Transform goal;
 
-	UnityEngine.AI.NavMeshAgent agent;
+
+	//UnityEngine.AI.NavMeshAgent agent;
 
 
 	// Use this for initialization 
 	void Start () 
 	{ 
 		curHealth = maxHealth;
-		UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-		agent.destination = goal.position;
+		//UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
 
 
 		//foreach (GameObject enemy in theDrop)
@@ -36,10 +36,7 @@ public class EnemyHealth : MonoBehaviour {
 	void Update () { 
 		AdjustCurrentHealth(0);
 
-		if (curHealth <= 30) 
-		{
-			agent.destination = goal.position;
-		}
+
 	} 
 
 

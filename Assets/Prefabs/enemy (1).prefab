@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 54638338921739516}
   - component: {fileID: 114710641670736348}
   - component: {fileID: 195496296413028706}
+  - component: {fileID: 114055920035345734}
   - component: {fileID: 114920077160937340}
   - component: {fileID: 114354369448265308}
   m_Layer: 0
@@ -229,6 +230,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114055920035345734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736599539552334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d0fc3b4217a84b33a4f142e5c385dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114354369448265308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -246,7 +258,6 @@ MonoBehaviour:
   drop: 0
   theDrop: {fileID: 1322938121611844, guid: c826ef09f2d58452d82c01be3debaf15, type: 2}
   deathParticles: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
-  goal: {fileID: 0}
 --- !u!114 &114710641670736348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -272,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4700193234477090, guid: 4af35fcfed6b44a599c6fa9cec41b4b7, type: 2}
-  range: 50
+  range: 20
   bulletImpulse: 30
   projectile: {fileID: 54426232427085560, guid: 194efab9499324901bd9a5a85bbf20e0,
     type: 2}

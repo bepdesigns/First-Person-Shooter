@@ -5,13 +5,16 @@ using UnityEngine;
 public class AIShooting : MonoBehaviour {
 
 	public Transform player;
-	public float range = 50.0f;
+	public float range = 20.0f;
 	public float bulletImpulse= 20.0f;
 
 	private bool onRange= false;
 
 	public Rigidbody projectile;
 	public GameObject spawnPoint;
+
+	//private float NextFire;
+	//private float FireRate = 1.0f;
 
 	void Start(){
 		float rand = Random.Range (1.0f, 2.0f);
@@ -22,6 +25,7 @@ public class AIShooting : MonoBehaviour {
 
 		if (onRange){
 
+			//NextFire = Time.time + FireRate;
 			Rigidbody bullet = (Rigidbody)Instantiate(projectile, spawnPoint.transform.position + transform.forward, spawnPoint.transform.rotation);
 			bullet.AddForce(transform.forward*bulletImpulse, ForceMode.Impulse);
 
