@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Patrol.cs" />
      <Compile Include="Assets\Scripts\Enemies\WanderingAI.cs" />
      <Compile Include="Assets\Scripts\EnemiesCounter.cs" />
      <Compile Include="Assets\Scripts\EnemiesGiveDamage.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerShooting.cs" />
      <Compile Include="Assets\Scripts\PowerUp02.cs" />
+     <Compile Include="Assets\Scripts\PowerUpEnemy.cs" />
      <Compile Include="Assets\Scripts\rocket.cs" />
      <Compile Include="Assets\Scripts\SaveData.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />

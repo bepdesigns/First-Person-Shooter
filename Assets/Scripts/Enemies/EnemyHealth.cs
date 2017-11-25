@@ -9,26 +9,37 @@ public class EnemyHealth : MonoBehaviour {
 	public int scoreValue = 1; 
 
 	public bool drop;
-	public GameObject[] theDrop;
+	public GameObject theDrop;
 	public GameObject deathParticles;
+	public Transform goal;
+
+	UnityEngine.AI.NavMeshAgent agent;
 
 
 	// Use this for initialization 
 	void Start () 
 	{ 
 		curHealth = maxHealth;
+		UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+		agent.destination = goal.position;
 
-		foreach (GameObject enemy in theDrop)
-		{
-			print(enemy);
-			theDrop = new GameObject[2];
 
-		}
+		//foreach (GameObject enemy in theDrop)
+		//{
+		//	print(enemy);
+			//theDrop = new GameObject[2];
+
+		//}
 	} 
 
 	// Update is called once per frame 
 	void Update () { 
-		AdjustCurrentHealth(0); 
+		AdjustCurrentHealth(0);
+
+		if (curHealth <= 30) 
+		{
+			agent.destination = goal.position;
+		}
 	} 
 
 
@@ -45,7 +56,8 @@ public class EnemyHealth : MonoBehaviour {
 
 		if (maxHealth < 1)
 			maxHealth = 1;    
-		
+
+
 		if(curHealth <= 0)
 		{
 			Death ();
@@ -59,7 +71,7 @@ public void Death ()
 		// Increase the score by the enemy's score value.
 		ScoreManager.score += scoreValue;
 		drop = true;
-		if(drop) Instantiate (theDrop[0],transform.position, transform.rotation);
+		if(drop) Instantiate (theDrop,transform.position, transform.rotation);
 		Instantiate (deathParticles, transform.position, Quaternion.Euler (1000, 0, 0));
 
 	// The enemy is dead.
