@@ -19,7 +19,7 @@ public class GiveDamage : MonoBehaviour
 			EnemyHealth eh = col.gameObject.GetComponent<EnemyHealth>();
 
 			eh.curHealth -= 10;
-			
+			RenderSettings.ambientLight = Color.red;
 		}
 		Destroy (this.gameObject, 3);
 	}

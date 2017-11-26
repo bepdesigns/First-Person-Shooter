@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 124587941647665386}
   - component: {fileID: 81999208557127374}
   - component: {fileID: 114382721854387354}
+  - component: {fileID: 114497629466490266}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -552,14 +553,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1379866004670728}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79, z: -40.1}
+  m_LocalRotation: {x: -0, y: 0.9999661, z: -0, w: -0.0082365135}
+  m_LocalPosition: {x: 11.323062, y: 0.79, z: 20.805458}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4131265617263596}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.94398, z: 0}
 --- !u!4 &4857060489656090
 Transform:
   m_ObjectHideFlags: 1
@@ -1419,6 +1420,19 @@ MonoBehaviour:
   curHealth: 0
   NbLifeText: {fileID: 0}
   deathParticles: {fileID: 100000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 2}
+--- !u!114 &114497629466490266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879383034692132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f240117e5f4b4c38ac87a8f2d7e148d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshairTexture: {fileID: 2800000, guid: 2b4fdb75631444626b08e10917a9ef13, type: 3}
+  crosshairScale: 0.05
 --- !u!114 &114572207312003382
 MonoBehaviour:
   m_ObjectHideFlags: 1

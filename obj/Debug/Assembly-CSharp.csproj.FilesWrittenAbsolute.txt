@@ -28,3 +28,8 @@
 /Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/Unity.Cecil.Mdb.dll
 /Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
 /Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/ProBuilderCore-Unity5.dll
+/Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/pb_Stl.dll
+/Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/Poly2Tri.dll
+/Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/ProBuilderMeshOps-Unity5.dll
+/Users/BENSON/My Games/FPS_For_Rene/Temp/bin/Debug/KdTreeLib.dll

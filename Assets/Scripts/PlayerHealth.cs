@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour {
 	// Use this for initialization 
 	void Start () { 
 		curHealth = maxHealth;
-		spawn = new Vector3(16, 1, -40);
+		spawn = new Vector3(11, 1, 20);
 	} 
 
 	// Update is called once per frame 
@@ -43,6 +43,7 @@ public class PlayerHealth : MonoBehaviour {
 		if(curHealth <= 0)
 		{
 			Death ();
+			RenderSettings.ambientLight = Color.red;
 		}
 
 	}

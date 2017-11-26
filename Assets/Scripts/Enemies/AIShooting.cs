@@ -41,5 +41,6 @@ public class AIShooting : MonoBehaviour {
 
 		if (onRange)
 			transform.LookAt(player);
+		Shoot ();
 	}
 }

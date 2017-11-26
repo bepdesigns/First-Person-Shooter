@@ -8,13 +8,19 @@ public class EnemiesCounter : MonoBehaviour {
 
 
 	public Text text;
+	public Text wintext;
 
 	int enemiesLeft = 0;
+	public GameObject blocker03;
+	public GameObject blocker04;
+	public GameObject blocker05;
+
 
 	bool killedAllEnemies = false;
 
 	void Start () {
 		enemiesLeft = 10; // or whatever;
+		wintext.enabled = false;
 
 	}
 
@@ -24,13 +30,20 @@ public class EnemiesCounter : MonoBehaviour {
 		text.text = "" + enemiesLeft;
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 		enemiesLeft = enemies.Length;
-		if(Input.GetKeyDown(KeyCode.A))
+
+			
+		if(enemiesLeft >= 150)
 		{
-			enemiesLeft --;
+			Destroy (blocker03, 3);
+			Destroy (blocker04, 4);
+			Destroy (blocker05, 5);
+
 		}
 		if(enemiesLeft == 0)
 		{
 			endGame();
+			wintext.enabled = true;
+			Time.timeScale = 0;
 		}
 	}
 

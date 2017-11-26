@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_For_Rene", "Assembly-CS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_For_Rene", "Assembly-CSharp-Editor-firstpass.csproj", "{09EEBF53-5C4D-24F4-BBF8-59515C6A6B9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FPS_For_Rene", "Assembly-CSharp-Editor.csproj", "{6EC3652B-A636-31AF-243A-7802F9B76E13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{09EEBF53-5C4D-24F4-BBF8-59515C6A6B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09EEBF53-5C4D-24F4-BBF8-59515C6A6B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09EEBF53-5C4D-24F4-BBF8-59515C6A6B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC3652B-A636-31AF-243A-7802F9B76E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC3652B-A636-31AF-243A-7802F9B76E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC3652B-A636-31AF-243A-7802F9B76E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC3652B-A636-31AF-243A-7802F9B76E13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
