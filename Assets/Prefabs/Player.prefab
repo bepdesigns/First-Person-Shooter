@@ -554,7 +554,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1379866004670728}
   m_LocalRotation: {x: -0, y: 0.9999661, z: -0, w: -0.0082365135}
-  m_LocalPosition: {x: 11.323062, y: 0.79, z: 20.805458}
+  m_LocalPosition: {x: 0.6, y: 0.95, z: 37.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4131265617263596}
@@ -1419,6 +1419,7 @@ MonoBehaviour:
   maxHealth: 100
   curHealth: 0
   NbLifeText: {fileID: 0}
+  GameOvermenuUI: {fileID: 0}
   deathParticles: {fileID: 100000, guid: 1f7aa4d40edff6e48b549003cad031e1, type: 2}
 --- !u!114 &114497629466490266
 MonoBehaviour:

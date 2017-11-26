@@ -1,20 +1,27 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemies/AIShooting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemies/EnemyWave.cs">
     <Files>
+      <File FileName="Assets/Scripts/EnemiesCounter.cs" Line="37" Column="27" />
       <File FileName="Assets/Scripts/Enemies/AIShooting.cs" Line="8" Column="24" />
-      <File FileName="Assets/Scripts/Enemies/EnemyHealth.cs" Line="39" Column="3" />
-      <File FileName="Assets/Scripts/EnemiesCounter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ScoreManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemies/EnemyMovement.cs" Line="10" Column="34" />
+      <File FileName="Assets/Scripts/Enemies/EnemyHealth.cs" Line="46" Column="44" />
+      <File FileName="Assets/Scripts/ScoreManager.cs" Line="31" Column="32" />
+      <File FileName="Assets/Scripts/Enemies/EnemyMovement.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Enemies/EnemyManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GameOverManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Shoot.cs" Line="35" Column="36" />
+      <File FileName="Assets/Scripts/Shoot.cs" Line="59" Column="76" />
       <File FileName="Assets/Scripts/PowerUp02.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Enemies/WanderingAI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EnemiesGiveDamage.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PowerUpEnemy.cs" Line="25" Column="6" />
-      <File FileName="Assets/Scripts/Enemies/Patrol.cs" Line="15" Column="32" />
+      <File FileName="Assets/Scripts/EnemiesGiveDamage.cs" Line="22" Column="44" />
+      <File FileName="Assets/Scripts/PowerUpEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/Patrol.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/EnemyWave.cs" Line="67" Column="26" />
+      <File FileName="Assets/Scripts/PlayerHealth.cs" Line="56" Column="30" />
+      <File FileName="Assets/Scripts/GiveDamage.cs" Line="24" Column="32" />
+      <File FileName="Assets/Scripts/Crosshair.cs" Line="18" Column="3" />
+      <File FileName="Assets/Scripts/Trigger.cs" Line="17" Column="4" />
+      <File FileName="Assets/Scripts/Launcher.cs" Line="21" Column="77" />
+      <File FileName="Assets/Scripts/AK47.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

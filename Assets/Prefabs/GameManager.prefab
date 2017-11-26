@@ -56,11 +56,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 0}
-    count: 2
-    rate: 3
+    count: 4
+    rate: 1
     spawnPoint: {fileID: 0}
   - enemy: {fileID: 0}
-    count: 3
+    count: 5
     rate: 1
     spawnPoint: {fileID: 0}
   - enemy: {fileID: 0}
@@ -79,7 +79,7 @@ MonoBehaviour:
     count: 8
     rate: 1
     spawnPoint: {fileID: 0}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 200
   waveCountdownText: {fileID: 0}
   nextWaveText: {fileID: 0}
 --- !u!114 &114602480558467696
@@ -106,8 +106,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   wintext: {fileID: 0}
-  blocker01: {fileID: 0}
-  blocker02: {fileID: 0}
   blocker03: {fileID: 0}
   blocker04: {fileID: 0}
   blocker05: {fileID: 0}

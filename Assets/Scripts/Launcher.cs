@@ -16,7 +16,9 @@ public class Launcher : MonoBehaviour {
 		if(Input.GetButtonDown("Fire1")&& Time.time >= NextFire)
 		{
 			NextFire = Time.time + FireRate;
-			rocketPrefab = Instantiate( rocketPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation) as Rigidbody;
+			Rigidbody hitPlayer;
+			hitPlayer = Instantiate( rocketPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation) as Rigidbody;
+			hitPlayer.velocity = transform.TransformDirection(Vector3.forward * 100);
 		}
 	}
 }
