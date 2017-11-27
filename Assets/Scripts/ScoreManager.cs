@@ -14,7 +14,7 @@ public class ScoreManager : MonoBehaviour {
 	public Text Killstext; 
 
 
-	void Awake ()
+	void Start ()
 	{
 		// Set up the reference.
 		//text = GetComponent <Text> ();

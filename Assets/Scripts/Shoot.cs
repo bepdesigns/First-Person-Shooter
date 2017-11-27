@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shoot : MonoBehaviour {
 
@@ -19,7 +20,7 @@ public class Shoot : MonoBehaviour {
 	public int bullets; // start with a brand new clip in the gun
 	public float reloadTime = 1.0f; // reload time in seconds
 
-
+	public Text bulletText; 
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +30,7 @@ public class Shoot : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		bulletText.text = "Kills: " + bulletsPerClip;
 
 		if(Input.GetButtonDown("Fire1")&& Time.time >= NextFire)
 		{
@@ -37,6 +39,7 @@ public class Shoot : MonoBehaviour {
 		
 				if (bullets > 0){ // and you have bullets...
 					Shooter( ); // shoot
+
 				} 
 			// but if gun empty... 
 			else if (clips > 0){ // and still have ammo clips...
