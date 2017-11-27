@@ -23,17 +23,20 @@ public class Shoot : MonoBehaviour {
 	public Text bulletText; 
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		//bullets = bulletsPerClip;
+		bulletText.enabled = false;
 
 	}
 
 	// Update is called once per frame
 	void Update () {
-		bulletText.text = "Kills: " + bulletsPerClip;
+		bulletText.text = "Kills: " + bullets;
 
 		if(Input.GetButtonDown("Fire1")&& Time.time >= NextFire)
 		{
+			bulletText.enabled = true;
 			NextFire = Time.time + FireRate;
 
 		

@@ -13,8 +13,8 @@ public class AIShooting : MonoBehaviour {
 	public Rigidbody projectile;
 	public GameObject spawnPoint;
 
-	//private float NextFire;
-	//private float FireRate = 1.0f;
+	private float NextFire;
+	private float FireRate = 1.0f;
 
 	void Start(){
 		float rand = Random.Range (1.0f, 2.0f);
@@ -23,7 +23,7 @@ public class AIShooting : MonoBehaviour {
 
 	void Shoot(){
 
-		if (onRange){
+		if (onRange && Time.time >= NextFire){
 
 			//NextFire = Time.time + FireRate;
 			Rigidbody bullet = (Rigidbody)Instantiate(projectile, spawnPoint.transform.position + transform.forward, spawnPoint.transform.rotation);

@@ -56,7 +56,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 0}
-    count: 4
+    count: 5
+    rate: 1
+    spawnPoint: {fileID: 0}
+  - enemy: {fileID: 0}
+    count: 6
     rate: 1
     spawnPoint: {fileID: 0}
   - enemy: {fileID: 0}
@@ -64,11 +68,7 @@ MonoBehaviour:
     rate: 1
     spawnPoint: {fileID: 0}
   - enemy: {fileID: 0}
-    count: 5
-    rate: 1
-    spawnPoint: {fileID: 0}
-  - enemy: {fileID: 0}
-    count: 5
+    count: 6
     rate: 1
     spawnPoint: {fileID: 0}
   - enemy: {fileID: 0}
