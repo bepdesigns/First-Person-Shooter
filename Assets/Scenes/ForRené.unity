@@ -62301,6 +62301,11 @@ Prefab:
       propertyPath: blocker05
       value: 
       objectReference: {fileID: 1035554506}
+    - target: {fileID: 114664506570217932, guid: 91bda16df67674ee3b9df708bee762b8,
+        type: 2}
+      propertyPath: menuUI
+      value: 
+      objectReference: {fileID: 1954031588}
     - target: {fileID: 114799043676531024, guid: 91bda16df67674ee3b9df708bee762b8,
         type: 2}
       propertyPath: text

@@ -109,6 +109,7 @@ MonoBehaviour:
   blocker03: {fileID: 0}
   blocker04: {fileID: 0}
   blocker05: {fileID: 0}
+  menuUI: {fileID: 0}
 --- !u!114 &114799043676531024
 MonoBehaviour:
   m_ObjectHideFlags: 1

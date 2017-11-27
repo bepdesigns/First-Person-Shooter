@@ -15,6 +15,7 @@ public class EnemiesCounter : MonoBehaviour {
 	public GameObject blocker04;
 	public GameObject blocker05;
 
+	public Transform menuUI;
 
 	bool killedAllEnemies = false;
 
@@ -44,6 +45,7 @@ public class EnemiesCounter : MonoBehaviour {
 			endGame();
 			wintext.enabled = true;
 			Time.timeScale = 0;
+			menuUI.gameObject.SetActive (true);
 		}
 	}
 
