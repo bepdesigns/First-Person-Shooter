@@ -43,15 +43,16 @@ public class EnemiesCounter : MonoBehaviour {
 		if(enemiesLeft == 0)
 		{
 			endGame();
-			wintext.enabled = true;
-			Time.timeScale = 0;
-			menuUI.gameObject.SetActive (true);
+
 		}
 	}
 
 	void endGame()
 	{
 		killedAllEnemies = true;
+		wintext.enabled = true;
+		Time.timeScale = 0;
+		menuUI.gameObject.SetActive (true);
 	}
 
 	/*void OnGUI()

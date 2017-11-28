@@ -453,7 +453,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1661193707626360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.296, y: -0.906, z: 1.252}
+  m_LocalPosition: {x: 0.396, y: -0.906, z: 1.252}
   m_LocalScale: {x: 0.13970244, y: 0.16386732, z: 1}
   m_Children:
   - {fileID: 4356631397793234}
@@ -510,8 +510,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710553044226226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.23, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999825, y: 1.0000162, z: 1}
+  m_LocalPosition: {x: -5.7765636, y: -0, z: -0}
+  m_LocalScale: {x: 0.99998254, y: 1.0000161, z: 1}
   m_Children:
   - {fileID: 4961886849877634}
   - {fileID: 4563562460956568}
@@ -1333,12 +1333,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1814956487867774}
-  ExplosionPrefab: {fileID: 0}
+  ExplosionPrefab: {fileID: 100002, guid: 180149b1a35449044a27b451e816d2de, type: 2}
   projectilePrefab: {fileID: 54426232427085560, guid: 04001fb72948d4f298e5ed369564b881,
     type: 2}
-  shotSound: {fileID: 0}
-  reloadSound: {fileID: 0}
-  clickSound: {fileID: 0}
+  shotSound: {fileID: 8300000, guid: be64544bade297e4d872dd74c66256d2, type: 3}
+  reloadSound: {fileID: 8300000, guid: 230d59294c9857140b63dd308ea4bd63, type: 3}
+  clickSound: {fileID: 8300000, guid: 56e1d39a6a60ae047a0c3ba3540db2c4, type: 3}
   clips: 2
   bulletsPerClip: 20
   bullets: 0

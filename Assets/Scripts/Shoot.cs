@@ -15,7 +15,7 @@ public class Shoot : MonoBehaviour {
 	public AudioClip shotSound;
 	public AudioClip reloadSound;
 	public AudioClip clickSound; // optional "no bullets" click sound
-	public int clips = 2; // how many clips you have
+	public int clips = 1; // how many clips you have
 	public int bulletsPerClip = 20; // how many bullets per clip
 	public int bullets; // start with a brand new clip in the gun
 	public float reloadTime = 1.0f; // reload time in seconds
@@ -45,7 +45,7 @@ public class Shoot : MonoBehaviour {
 
 				} 
 			// but if gun empty... 
-			else if (clips > 0){ // and still have ammo clips...
+			else if (clips  >= 0){ // and still have ammo clips...
 						StartCoroutine(Reload()); // start reload routine
 				Debug.Log("go");
 					}
@@ -76,6 +76,8 @@ public class Shoot : MonoBehaviour {
 		clips -= 1; // got one clip, decrement clip count:
 		//audio.PlayOneShot(reloadSound); // play the reload sound
 		yield  return new WaitForSeconds(reloadTime); // wait the reload time
+		Debug.Log("bullet reloaded");
+		clips = 1;
 		bullets = bulletsPerClip; // now the bullets are available
 		reloading = false; // reloading finished
 	}

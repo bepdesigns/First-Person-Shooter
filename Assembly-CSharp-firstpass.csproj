@@ -105,6 +105,7 @@
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitSolidColor.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_ReferenceUnlit.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseTextureBlend.shader" />
+     <None Include="Assets\LoadingScene\info_morgueroom.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_StandardVertexColor.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_VertexPicker.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />

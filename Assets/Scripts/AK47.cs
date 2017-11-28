@@ -16,11 +16,13 @@ public class AK47 : MonoBehaviour {
 
 	void Start(){
 		_ammo = GetComponentInParent<ammo> ();
+
 	}
 	void Update () {
 		coolDownRemaining -= Time.deltaTime;
 
 		if( Input.GetMouseButton(0) && coolDownRemaining <= 0 && _ammo.ammoInClip >= 0) {
+			_ammo.text.enabled = true;
 			coolDownRemaining = cooldown;
 			Camera cam = Camera.main;
 			GameObject thebullet = (GameObject)Instantiate(bullet_prefab, cam.transform.position + cam.transform.forward, cam.transform.rotation);

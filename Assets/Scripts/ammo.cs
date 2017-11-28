@@ -11,6 +11,10 @@ public class ammo : MonoBehaviour {
 	public float clipCapacity = 15f;
 	public float clips = 5;
 
+	void Start()
+	{
+		text.enabled = false;
+	}
 
 	public void Update()
 	{
