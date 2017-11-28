@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class EnemyHealth : MonoBehaviour {
 	public bool drop;
 	public GameObject theDrop;
 	public GameObject deathParticles;
+	public Text NbLifeText;
 
 	ScoreManager sm;
 
@@ -40,6 +42,7 @@ public class EnemyHealth : MonoBehaviour {
 	// Update is called once per frame 
 	void Update () { 
 		AdjustCurrentHealth(0);
+		NbLifeText.text = "" + curHealth.ToString ();
 
 		if(curHealth <= 0)
 		{
